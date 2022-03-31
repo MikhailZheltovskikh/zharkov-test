@@ -94,30 +94,97 @@
 .header__content {
    color: #cb9e76;
    .title-made {
-      font-family: "MADE TheArtist Script";
-      font-style: normal;
-      font-weight: 400;
       font-size: 260px;
    }
    .title-raleway {
-      font-weight: 300;
       font-size: 215.273px;
    }
-   .text{
+   .text {
       color: #fff;
       max-width: 541px;
       text-transform: uppercase;
    }
-   &-box{
+   &-box {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
    }
 }
-.header__bottom{
+.header__bottom {
    padding-bottom: 48px;
    text-align: center;
 }
 //end header
+
+//start slider
+.slider__item {
+   min-height: 835px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.slider__item-text {
+   max-width: 760px;
+   margin-top: 139px;
+   .title-raleway {
+      font-size: 100px;
+      line-height: 117px;
+      text-transform: uppercase;
+      color: #2f3338;
+   }
+   .title-made {
+      color: #fff;
+      font-size: 120px;
+      line-height: 110px;
+      margin-bottom: 37px;
+      margin-top: -73px;
+   }
+   .text {
+      font-size: 21px;
+      line-height: 140%;
+      color: #2f3338;
+   }
+}
+.slick-dots {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 45px;
+   li {
+      button {
+         font-size: 0;
+         border: none;
+         width: 35px;
+         height: 35px;
+         border-radius: 50%;
+         background-color: transparent;
+         border: none;
+         position: relative;
+         &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background-color: #cb9e76;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+      & + li {
+         margin-left: 27px;
+      }
+   }
+   .slick-active {
+      button{
+         border: 1px solid #cb9e76;
+      }
+   }
+}
+
+//end slider
 
 @import "midia";
