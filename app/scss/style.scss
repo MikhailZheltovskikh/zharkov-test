@@ -1,14 +1,123 @@
 @import "vars";
 @import "fonts";
-@import 'reset';
+@import "reset";
 @import "global";
 
-//start
-
-//end
-
-
-
-
+//start header
+.header {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+}
+.header__inner {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+.header__menu {
+   height: 120px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.menu__left {
+   display: flex;
+   a {
+      display: inline-block;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #fff;
+      & + a {
+         margin-left: 60px;
+      }
+   }
+}
+.menu__btn {
+   margin-right: 12px;
+   cursor: pointer;
+   div {
+      background-color: #fff;
+      width: 25px;
+      height: 1px;
+      & + div {
+         margin-top: 7px;
+      }
+   }
+}
+.logo {
+   max-height: 120px;
+}
+.menu__right {
+   display: flex;
+   align-items: center;
+   a + a {
+      margin-left: 30px;
+   }
+   .phone {
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #fff;
+   }
+   .like {
+      background-image: url(../images/icon/like.svg);
+      width: 32px;
+      height: 30px;
+   }
+   .login {
+      background-image: url(../images/icon/login.svg);
+      width: 31px;
+      height: 30px;
+   }
+   .basket {
+      background-image: url(../images/icon/basket.svg);
+      width: 37px;
+      height: 32px;
+      position: relative;
+      span {
+         position: absolute;
+         background-color: #cb9e76;
+         width: 28px;
+         height: 28px;
+         border-radius: 50%;
+         text-align: center;
+         line-height: 27px;
+         right: -10px;
+         top: -7px;
+         font-size: 11px;
+         color: #fff;
+      }
+   }
+}
+.header__content {
+   color: #cb9e76;
+   .title-made {
+      font-family: "MADE TheArtist Script";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 260px;
+   }
+   .title-raleway {
+      font-weight: 300;
+      font-size: 215.273px;
+   }
+   .text{
+      color: #fff;
+      max-width: 541px;
+      text-transform: uppercase;
+   }
+   &-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+   }
+}
+.header__bottom{
+   padding-bottom: 48px;
+   text-align: center;
+}
+//end header
 
 @import "midia";
