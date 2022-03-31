@@ -179,12 +179,196 @@
       }
    }
    .slick-active {
-      button{
+      button {
          border: 1px solid #cb9e76;
       }
    }
 }
-
 //end slider
+//start subscription
+
+.subscription__title {
+   padding-top: 20px;
+   max-width: 1070px;
+   text-align: end;
+   font-style: normal;
+   font-weight: 300;
+   font-size: 64px;
+   text-transform: uppercase;
+   color: #2f3338;
+   margin-bottom: 50px;
+   span {
+      font-family: "MADE TheArtist Script";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 90px;
+      text-transform: lowercase;
+      color: #cb9e76;
+   }
+}
+.subscription__bottom {
+   padding: 50px 0 33px;
+   background-color: #cb9e76;
+   .email {
+      input {
+         border: none;
+         background-color: transparent;
+         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+         width: 342px;
+         &::placeholder {
+            font-size: 16.2909px;
+            line-height: 100%;
+            color: #ffffff;
+            opacity: 0.5;
+         }
+      }
+   }
+   .line-1 {
+      display: flex;
+      align-items: center;
+   }
+   .form__btn {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      span {
+         display: inline-block;
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         border: 1px solid #ffffff;
+         position: relative;
+         &::before {
+            content: "";
+            position: absolute;
+            background-image: url(../images/icon/arr.svg);
+            width: 12px;
+            height: 9px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+      .form__button {
+         margin-left: 160px;
+         text-decoration-line: underline;
+         color: #ffffff;
+         border: none;
+         background-color: transparent;
+         margin-right: 10px;
+         cursor: pointer;
+      }
+   }
+   .checkbox {
+      color: #ffffff;
+      opacity: 0.5;
+   }
+}
+.checkbox {
+   width: 100%;
+   padding: 0 0 0 36px;
+   display: block;
+   position: relative;
+   cursor: pointer;
+   font-weight: 400;
+   font-size: 16px;
+}
+.checkbox input[type="checkbox"] {
+   display: none;
+}
+.checkbox input[type="checkbox"] + span {
+   position: absolute;
+   left: 0;
+   top: 0px;
+   width: 18px;
+   height: 18px;
+   background: url(../images/check.svg) no-repeat;
+   cursor: pointer;
+   background-position: -50px 0;
+   background-size: 10px;
+   background-color: transparent;
+   opacity: 0.5;
+   border: 1px solid #ffffff;
+}
+.checkbox input[type="checkbox"]:checked + span {
+   background-position: center center;
+}
+//end subscription
+
+//start footer
+.footer {
+   padding: 175px 0 176px;
+   background-color: #2f3338;
+}
+.footer__contacts {
+   margin-bottom: 80px;
+   a {
+      display: block;
+      text-align: center;
+      font-weight: 300;
+      font-size: 64px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 10px;
+      letter-spacing: 0.02em;
+      font-style: normal;
+   }
+}
+.footer__box {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   &-left {
+      color: #fff;
+      p + p {
+         margin-top: 23px;
+      }
+   }
+   &-center {
+      a {
+         border: 1px solid #cb9e76;
+         width: 161.6px;
+         height: 163.79px;
+         background-color: transparent;
+         border-radius: 50%;
+         position: relative;
+         &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+         }
+         & + a {
+            margin-left: 20px;
+         }
+      }
+
+      .instagram {
+         &::before {
+            background-image: url(../images/icon/instagram.svg);
+            width: 37px;
+            height: 37px;
+         }
+      }
+      .whatsapp {
+         &::before {
+            background-image: url(../images/icon/whatsapp.svg);
+            width: 33px;
+            height: 34px;
+         }
+      }
+   }
+   &-right {
+      a {
+         color: #fff;
+         text-transform: uppercase;
+      }
+   }
+}
+
+//end footer
 
 @import "midia";
