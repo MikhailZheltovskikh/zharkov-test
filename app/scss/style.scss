@@ -117,77 +117,79 @@
 //end header
 
 //start slider
-.slider__item {
-   min-height: 835px;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.slider__item-text {
-   max-width: 760px;
-   margin-top: 139px;
-   .title-raleway {
-      font-size: 100px;
-      line-height: 117px;
-      text-transform: uppercase;
-      color: #2f3338;
+.slider-top {
+   .slider__item {
+      min-height: 835px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
    }
-   .title-made {
-      color: #fff;
-      font-size: 120px;
-      line-height: 110px;
-      margin-bottom: 37px;
-      margin-top: -73px;
+   .slider__item-text {
+      max-width: 760px;
+      margin-top: 139px;
+      .title-raleway {
+         font-size: 100px;
+         line-height: 117px;
+         text-transform: uppercase;
+         color: #2f3338;
+      }
+      .title-made {
+         color: #fff;
+         font-size: 120px;
+         line-height: 110px;
+         margin-bottom: 37px;
+         margin-top: -73px;
+      }
+      .text {
+         font-size: 21px;
+         line-height: 140%;
+         color: #2f3338;
+      }
    }
-   .text {
-      font-size: 21px;
-      line-height: 140%;
-      color: #2f3338;
-   }
-}
-.slick-dots {
-   display: flex;
-   justify-content: center;
-   position: absolute;
-   left: 0;
-   right: 0;
-   bottom: 45px;
-   li {
-      button {
-         font-size: 0;
-         border: none;
-         width: 35px;
-         height: 35px;
-         border-radius: 50%;
-         background-color: transparent;
-         border: none;
-         position: relative;
-         &::before {
-            content: "";
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            background-color: #cb9e76;
+   .slick-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 45px;
+      li {
+         button {
+            font-size: 0;
+            border: none;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+            background-color: transparent;
+            border: none;
+            position: relative;
+            &::before {
+               content: "";
+               position: absolute;
+               width: 12px;
+               height: 12px;
+               background-color: #cb9e76;
+               border-radius: 50%;
+               left: 50%;
+               top: 50%;
+               transform: translate(-50%, -50%);
+            }
+         }
+         & + li {
+            margin-left: 27px;
          }
       }
-      & + li {
-         margin-left: 27px;
-      }
-   }
-   .slick-active {
-      button {
-         border: 1px solid #cb9e76;
+      .slick-active {
+         button {
+            border: 1px solid #cb9e76;
+         }
       }
    }
 }
 //end slider
 
 //start corneotherapy
-.corneotherapy{
+.corneotherapy {
    margin: 200px 0 200px;
 }
 .corneotherapy__title {
@@ -267,7 +269,7 @@
          height: 30px;
          left: 50%;
          top: 50%;
-         transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);;
       }
    }
 }
@@ -277,6 +279,58 @@
 }
 //end corneotherapy
 
+//start facilities
+.facilities__title {
+   div {
+      font-size: 170px;
+      color: #cb9e76;
+      margin-left: 45%;
+      margin-top: -135px;
+   }
+}
+.facilities__slider-item {
+   max-width: 300px;
+   height: 540px;
+   .slider__item-img {
+      height: 450px;
+   }
+   img {
+      max-height: 100%;
+      margin: 0 auto;
+   }
+   .slider__item-text {
+      margin: 0;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: #2f3338;
+      border-top: 1px solid #cb9e76;
+      padding-top: 10px;
+   }
+}
+.facilities__slider-inner{
+   margin-bottom: 55px;
+   .slick-next.slick-next.slick-arrow,
+   .slick-prev.slick-arrow{
+      border: none;
+      background-color: transparent;
+   }
+   .slick-prev{
+      position: absolute;
+      bottom: -65px;
+      right: 50%;
+      transform:translate(-50%);
+      
+   }
+   .slick-next{
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      transform:translate(-50%);
+      margin-left: 66px;
+   }
+}
+
+//end facilities
 // start consultation
 .consultation {
    min-height: 735px;
