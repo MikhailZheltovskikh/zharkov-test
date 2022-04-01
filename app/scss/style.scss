@@ -185,6 +185,169 @@
    }
 }
 //end slider
+
+//start corneotherapy
+.corneotherapy{
+   margin: 200px 0 200px;
+}
+.corneotherapy__title {
+   position: relative;
+   div {
+      font-style: normal;
+      font-size: 100px;
+      line-height: 0px;
+      color: #cb9e76;
+      text-transform: initial;
+      margin-left: 35%;
+      margin-top: -30px;
+   }
+}
+.corneotherapy__inner {
+   display: flex;
+   justify-content: space-between;
+   margin-top: -50px;
+}
+.corneotherapy__item-1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   .corneotherapy__item-text {
+      margin-top: 150px;
+   }
+}
+.corneotherapy__item-btn {
+   display: flex;
+   align-items: center;
+   a {
+      font-weight: 300;
+      font-size: 21px;
+      text-decoration-line: underline;
+      color: #2f3338;
+   }
+   span {
+      margin-left: 12px;
+      width: 70px;
+      height: 70px;
+      border: 1px solid rgba(47, 51, 56, 1);
+      border-radius: 50%;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(../images/icon/arr-black.svg);
+         width: 12px;
+         height: 9px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+
+.corneotherapy__item-2 {
+   min-width: 657px;
+   height: 675px;
+   background-color: #2f3338;
+   margin: 0 35px 0 86px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   span {
+      cursor: pointer;
+      width: 155px;
+      height: 155px;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      position: relative;
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(../images/icon/Play-big.svg);
+         width: 26px;
+         height: 30px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+.corneotherapy__item-3 {
+   display: flex;
+   align-items: flex-end;
+}
+//end corneotherapy
+
+// start consultation
+.consultation {
+   min-height: 735px;
+   position: relative;
+   margin: 200px 0 200px;
+}
+.consultation__title {
+   position: absolute;
+}
+.consultation__title-2 {
+   margin-left: 23%;
+}
+
+.consultation__form-wrapper {
+   display: flex;
+}
+.consultation__inner {
+   display: flex;
+   align-items: flex-end;
+   justify-content: right;
+}
+.consultation__text {
+   max-width: 408px;
+   color: #2f3338;
+   margin-bottom: 41px;
+}
+.consultation__form-input {
+   .input-form {
+      display: block;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      width: 342px;
+      &::placeholder {
+         color: #000;
+         opacity: 0.5;
+      }
+   }
+   input + input {
+      margin-top: 27px;
+   }
+}
+.consultation__form-button {
+   button {
+      cursor: pointer;
+      display: inline-block;
+      width: 162px;
+      height: 162px;
+      background-color: transparent;
+      border-radius: 50%;
+      border: 1px solid #000;
+      position: relative;
+      margin-left: 80px;
+      &::before {
+         content: "";
+         position: absolute;
+         background-image: url(../images/icon/arr-big.svg);
+         width: 28px;
+         height: 19px;
+         left: 50%;
+         top: 50%;
+         transform: translate(-50%, -50%);
+      }
+   }
+}
+.consultation__item-img {
+   max-width: 550px;
+   margin-left: 91px;
+   img {
+   }
+}
+// end consultation
+
 //start subscription
 
 .subscription__title {
@@ -209,20 +372,7 @@
 .subscription__bottom {
    padding: 50px 0 33px;
    background-color: #cb9e76;
-   .email {
-      input {
-         border: none;
-         background-color: transparent;
-         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-         width: 342px;
-         &::placeholder {
-            font-size: 16.2909px;
-            line-height: 100%;
-            color: #ffffff;
-            opacity: 0.5;
-         }
-      }
-   }
+
    .line-1 {
       display: flex;
       align-items: center;
