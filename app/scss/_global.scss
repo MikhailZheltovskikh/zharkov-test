@@ -36,11 +36,6 @@ body {
    margin: 0px auto;
    padding: 0px 15px;
 }
-// .container-fluid {
-//    max-width: 100%;
-//    margin: 0px auto;
-//    padding: 0px 30px;
-// }
 
 .menu__list{
    display: none;
@@ -50,6 +45,7 @@ body {
    font-family: "MADE TheArtist Script";
    font-style: normal;
    font-weight: 400;
+   line-height: 154px;
 }
 .title-raleway {
    font-weight: 300;
@@ -74,3 +70,15 @@ body {
    line-height: 164px;
    text-transform: uppercase;
 }
+.photo-product,
+.corneotherapy,
+.care {
+   margin: 200px 0 200px;
+}
+
+a{
+   cursor: pointer;
+}
+
+
+

@@ -32,7 +32,11 @@
       & + a {
          margin-left: 60px;
       }
+      &:hover{
+         color: #cb9e76;
+      }
    }
+   
 }
 .menu__btn {
    margin-right: 12px;
@@ -60,6 +64,9 @@
       text-transform: uppercase;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #fff;
+      &:hover{
+         color: #cb9e76;
+      }
    }
    .like {
       background-image: url(../images/icon/like.svg);
@@ -188,10 +195,93 @@
 }
 //end slider
 
-//start corneotherapy
-.corneotherapy {
-   margin: 200px 0 200px;
+//startphoto-product
+.photo-product {
+   position: relative;
 }
+.photo-product__title {
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   span {
+      display: block;
+      margin-left: 20%;
+   }
+   div {
+      position: absolute;
+      font-size: 100px;
+      color: #cb9e76;
+      margin-left: 15%;
+      text-transform: lowercase;
+      top: -100px;
+   }
+}
+.photo-product__inner {
+   display: flex;
+   justify-content: center;
+   margin-left: 14%;
+   margin-top: -15%;
+}
+.photo-product__item {
+   margin: auto 0;
+}
+.photo-product__item-img {
+   width: 423px;
+   height: 423px;
+   position: relative;
+
+   &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.2;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
+}
+.photo-product__item-box {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   span:hover{
+      path{
+         stroke: #cb9e76;
+      }
+      circle{
+         stroke: #cb9e76;
+      }
+   }
+}
+.photo-product__item-text {
+   display: none;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #ffffff;
+   width: 330px;
+}
+.photo-product__item-icon.none {
+   display: none;
+}
+.photo-product__item-text.active {
+   display: block;
+}
+
+.photo-product__item-center {
+   margin: 0 32px;
+   .photo-product__item-img + .photo-product__item-img {
+      margin-top: 32px;
+   }
+}
+//end photo-product
+//start corneotherapy
+
 .corneotherapy__title {
    position: relative;
    div {
@@ -232,16 +322,15 @@
       height: 70px;
       border: 1px solid rgba(47, 51, 56, 1);
       border-radius: 50%;
-      position: relative;
-      &::before {
-         content: "";
-         position: absolute;
-         background-image: url(../images/icon/arr-black.svg);
-         width: 12px;
-         height: 9px;
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+         border: 1px solid #fff;
+         background-color: #cb9e76;
+         path {
+            stroke: #fff;
+         }
       }
    }
 }
@@ -255,22 +344,22 @@
    align-items: center;
    justify-content: center;
    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       cursor: pointer;
       width: 155px;
       height: 155px;
       border: 1px solid #ffffff;
       border-radius: 50%;
-      position: relative;
-      &::before {
-         content: "";
-         position: absolute;
-         background-image: url(../images/icon/Play-big.svg);
-         width: 26px;
-         height: 30px;
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);;
+      &:hover{
+         border: 1px solid #CB9E76;
+         path{
+            fill: #CB9E76;
+            stroke: #CB9E76;
+         }
       }
+      
    }
 }
 .corneotherapy__item-3 {
@@ -290,9 +379,14 @@
 }
 .facilities__slider-item {
    max-width: 300px;
-   height: 540px;
+   height: 520px;
+   border: 1px solid transparent;
+   padding: 30px;
+   &:hover{
+      border: 1px solid #cb9e76;
+   }
    .slider__item-img {
-      height: 450px;
+      height: 390px;
    }
    img {
       max-height: 100%;
@@ -307,30 +401,84 @@
       padding-top: 10px;
    }
 }
-.facilities__slider-inner{
-   margin-bottom: 55px;
+.facilities__slider-inner {
+   padding-bottom: 55px;
    .slick-next.slick-next.slick-arrow,
-   .slick-prev.slick-arrow{
+   .slick-prev.slick-arrow {
       border: none;
       background-color: transparent;
    }
-   .slick-prev{
+   .slick-prev {
       position: absolute;
       bottom: -65px;
       right: 50%;
-      transform:translate(-50%);
-      
+      transform: translate(-50%);
    }
-   .slick-next{
+   .slick-next {
       position: absolute;
       bottom: -65px;
       left: 50%;
-      transform:translate(-50%);
+      transform: translate(-50%);
       margin-left: 66px;
    }
 }
 
 //end facilities
+// start care
+.care__title {
+   div {
+      font-size: 170px;
+      color: #cb9e76;
+      margin-left: 45%;
+      margin-top: -108px;
+      text-transform: lowercase;
+   }
+}
+.care__text {
+   max-width: 580px;
+   margin-bottom: 100px;
+}
+.care__wrapper {
+   max-width: 1162px;
+   position: relative;
+   .care-bg {
+      position: absolute;
+      bottom: -40px;
+      left: -160px;
+      z-index: -1;
+   }
+}
+.care__item {
+   display: flex;
+   justify-content: space-between;
+   .care__item-number {
+      font-family: "MADE TheArtist Script";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 100%;
+      color: #2f3338;
+      margin-right: 233px;
+   }
+   .care__item-text {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 64px;
+      text-transform: uppercase;
+      color: #2f3338;
+
+      span {
+         display: block;
+         text-align: right;
+      }
+   }
+   & + .care__item {
+      margin-top: 100px;
+   }
+}
+// end care
+
 // start consultation
 .consultation {
    min-height: 735px;
@@ -379,26 +527,19 @@
       height: 162px;
       background-color: transparent;
       border-radius: 50%;
-      border: 1px solid #000;
-      position: relative;
       margin-left: 80px;
-      &::before {
-         content: "";
-         position: absolute;
-         background-image: url(../images/icon/arr-big.svg);
-         width: 28px;
-         height: 19px;
-         left: 50%;
-         top: 50%;
-         transform: translate(-50%, -50%);
+      &:hover {
+         background: #cb9e76;
+         border: 1px solid #ffffff;
+         path {
+            stroke: #ffffff;
+         }
       }
    }
 }
 .consultation__item-img {
    max-width: 550px;
    margin-left: 91px;
-   img {
-   }
 }
 // end consultation
 
@@ -441,16 +582,14 @@
          height: 70px;
          border-radius: 50%;
          border: 1px solid #ffffff;
-         position: relative;
-         &::before {
-            content: "";
-            position: absolute;
-            background-image: url(../images/icon/arr.svg);
-            width: 12px;
-            height: 9px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         &:hover {
+            background-color: #fff;
+            path {
+               stroke: #cb9e76;
+            }
          }
       }
       .form__button {
@@ -516,52 +655,53 @@
       margin-bottom: 10px;
       letter-spacing: 0.02em;
       font-style: normal;
+      &:hover{
+         color: #cb9e76;
+      }
    }
 }
 .footer__box {
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
+   a:hover{
+      color: #cb9e76;
+   }
    &-left {
       color: #fff;
-      p + p {
+      a{
+         color: #fff;
+      }
+      p {
          margin-top: 23px;
       }
    }
    &-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       a {
          border: 1px solid #cb9e76;
          width: 161.6px;
          height: 163.79px;
          background-color: transparent;
          border-radius: 50%;
-         position: relative;
-         &::before {
-            content: "";
-            position: absolute;
-            width: 12px;
-            height: 12px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-         }
+         display: flex;
+         justify-content: center;
+         align-items: center;
          & + a {
             margin-left: 20px;
          }
       }
-
-      .instagram {
-         &::before {
-            background-image: url(../images/icon/instagram.svg);
-            width: 37px;
-            height: 37px;
-         }
-      }
-      .whatsapp {
-         &::before {
-            background-image: url(../images/icon/whatsapp.svg);
-            width: 33px;
-            height: 34px;
+      a:hover {
+         border: 1px solid #fff;
+         .whatsapp-svg {
+            path:first-child {
+               fill: #fff;
+            }
+            path {
+               stroke: #fff;
+            }
          }
       }
    }
@@ -569,6 +709,9 @@
       a {
          color: #fff;
          text-transform: uppercase;
+         &:hover{
+            color: #cb9e76;
+         }
       }
    }
 }
