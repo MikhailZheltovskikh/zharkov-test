@@ -37,9 +37,12 @@
       font-size: 70px;
       top: -100px;
    }
+   // title
    .photo-product__title.title,
    .facilities__title.title,
-   .care__title.title {
+   .care__title.title,
+   .consultation__title.title,
+   .blog__title {
       font-size: 100px;
       line-height: 100px;
    }
@@ -47,6 +50,10 @@
       line-height: 108px;
       font-size: 120px;
       margin-top: -70px;
+   }
+   .consultation__item-img {
+      max-width: 300px;
+      top: -95%;
    }
 }
 @media (max-width: 1250px) {
@@ -78,6 +85,23 @@
    .care__item .care__item-text {
       font-size: 50px;
    }
+   .corneotherapy__item-btn {
+      margin-top: 20px;
+   }
+   .blog__wrapper{
+      flex-wrap: wrap;
+   }
+   .blog__col-1{
+      flex-direction: inherit;
+      margin-bottom: 33px;
+      .blog__item + .blog__item{
+         margin-left: 33px;
+         margin-top: 0;
+      }
+   }
+   .blog__item-date {
+      font-size: 40px;
+   }
 }
 @media (max-width: 1150px) {
    .header__content__inner {
@@ -106,17 +130,64 @@
       line-height: 0;
       margin-left: 49%;
    }
+   .subscription__title {
+      text-align: inherit;
+      span {
+         display: block;
+      }
+   }
+   .footer__box {
+      display: block;
+      text-align: center;
+      .footer__box-center {
+         margin-bottom: 56px;
+      }
+      .footer__box-right {
+         margin-bottom: 10px;
+      }
+   }
+   .consultation__item {
+      margin-left: 0;
+   }
+   .consultation__title span {
+      margin-left: 0;
+      display: block;
+   }
+   .blog__col-1{
+      margin-right: 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      .blog__item{
+         margin-bottom: 33px;
+      }
+   }
+   
+
 }
 @media (max-width: 900px) {
+   // title
    .corneotherapy__title.title,
    .facilities__title.title,
-   .care__title.title {
+   .care__title.title,
+   .photo-product__title.title,
+   .consultation__title.title,
+   .subscription__title,
+   .blog__title {
       font-size: 50px;
+   }
+   .consultation__title.title {
+      line-height: 55px;
    }
    .corneotherapy__title div {
       font-size: 40px;
       margin-left: 12%;
       margin-top: -49px;
+   }
+   .photo-product__title div {
+      font-size: 48px;
+      top: -44px;
+      margin-left: 0;
+      line-height: 0;
    }
    .facilities__title div {
       font-size: 40px;
@@ -144,19 +215,56 @@
    .care__title div {
       margin-top: 0;
    }
+   .footer__contacts a {
+      font-size: 50px;
+   }
+   .slider-top .slider__item-text .title-raleway {
+      font-size: 65px;
+   }
+   .slider-top .slider__item-text .title-made {
+      font-size: 80px;
+      line-height: 49px;
+      margin-bottom: 37px;
+      margin-top: -10px;
+   }
+   .blog__col-string{
+      flex-wrap: wrap;
+      justify-content: center;
+      .blog__item{
+         margin-bottom: 33px;
+      }
+   }
+   .blog__col-1 .blog__item+.blog__item{
+      margin-left: 0;
+   }
 }
 @media (max-width: 840px) {
-   a.phone,
+   a.header-phone,
    a.header__shops {
       display: none;
    }
    a.like {
       margin-left: 0;
    }
+   .consultation__item-img {
+      max-width: 200px;
+      top: -70%;
+   }
 }
 @media (max-width: 730px) {
    .facilities__slider-item-wrapper {
       width: 100%;
+   }
+   .subscription__title span {
+      font-size: 70px;
+   }
+   .line-2 {
+      .checkbox {
+         width: 230px;
+      }
+   }
+   .footer__contacts a {
+      font-size: 35px;
    }
 }
 
@@ -177,20 +285,12 @@
    }
 }
 @media (max-width: 600px) {
-   .photo-product__title div {
-      font-size: 48px;
-      top: -44px;
-      margin-left: 0;
-      line-height: 0;
-   }
-   .photo-product__title.title {
-      font-size: 50px;
-      line-height: 50px;
-   }
    .photo-product,
    .corneotherapy,
    .facilities,
-   .care {
+   .care,
+   .consultation,
+   .blog {
       margin: 100px 0 80px;
    }
    .photo-product__slider {
@@ -214,6 +314,35 @@
       margin-top: -40px;
       margin-left: 49%;
    }
+   .care__title div {
+      line-height: 32px;
+      font-size: 55px;
+   }
+   .subscription__bottom {
+      form {
+         flex-wrap: wrap;
+      }
+      .form__btn {
+         margin-top: 20px;
+      }
+   }
+   .consultation__text {
+      font-size: 18px;
+      max-width: 300px;
+   }
+   .consultation__form-button button {
+      margin-left: 20px;
+   }
+   .slider-top .slider__item-text .title-raleway {
+      font-size: 50px;
+   }
+   .slider-top .slider__item-text .title-made {
+      font-size: 55px;
+      line-height: 40px;
+   }
+   .blog__col-string .blog__item+.blog__item{
+      margin-left: 0;
+   }
 }
 @media (max-width: 550px) {
    .header__content .title-made {
@@ -224,9 +353,37 @@
    }
    .care__wrapper .care-bg {
       width: 340px;
-      bottom: 0;
-      left: 0;
-  }
+      bottom: auto;
+      left: auto;
+      top: 0;
+      right: 0;
+   }
+   .subscription__title,
+   .consultation__title.title {
+      font-size: 36px;
+   }
+   .footer__box-center a {
+      width: 120px;
+      height: 120px;
+   }
+   .consultation__form-button button {
+      width: 100px;
+      height: 100px;
+   }
+   .consultation__form-wrapper {
+      display: block;
+   }
+   .consultation__form-button button {
+      margin-left: 0;
+      margin-top: 25px;
+   }
+   .consultation__text {
+      max-width: 250px;
+   }
+   .consultation__item-img {
+      max-width: 150px;
+      top: -45px;
+   }
 }
 @media (max-width: 450px) {
    a.header__menu-text {
@@ -260,6 +417,15 @@
    .facilities__slider-item-wrapper {
       height: 371px;
    }
+   .care__item + .care__item {
+      margin-top: 25px;
+   }
+   .footer__contacts a {
+      font-size: 23px;
+   }
+   .blog__item-text{
+      display: none;
+   }
 }
 @media (max-width: 430px) {
    .menu__right {
@@ -285,9 +451,42 @@
       line-height: 120%;
       width: 150px;
    }
+   .care__item-number {
+      margin-right: 20px;
+   }
+   .care__item .care__item-text {
+      font-size: 17px;
+   }
+   .care__item .care__item-number {
+      font-size: 35px;
+   }
+   .consultation__item-img {
+      display: none;
+   }
+   .consultation__form-input .input-form {
+      width: 100%;
+   }
+   .slider-top .slider__item-text .text {
+      font-size: 18px;
+   }
+   .slider-top .slider__item-text .title-raleway {
+      font-size: 35px;
+      line-height: 60px;
+   }
+   .slider-top .slider__item-text .title-made {
+      font-size: 38px;
+   }
+   .blog__item__title{
+      font-size: 20px;
+   }
 }
-@media (max-width: 340px) {
+@media (max-width: 370px) {
    a.header__menu-text {
       display: none;
+   }
+   .line-1 {
+      .input-form {
+         width: 290px;
+      }
    }
 }

@@ -16,7 +16,7 @@ li {
 }
 
 body {
-   font-family: 'Raleway', sans-serif;
+   font-family: "Raleway", sans-serif;
    font-weight: 400;
    font-size: 21px;
 }
@@ -37,7 +37,7 @@ body {
    padding: 0px 15px;
 }
 
-.menu__list{
+.menu__list {
    display: none;
 }
 
@@ -56,6 +56,8 @@ body {
    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
    width: 342px;
    &::placeholder {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
       font-size: 16.2909px;
       line-height: 100%;
       color: #ffffff;
@@ -63,7 +65,7 @@ body {
    }
 }
 
-.title{
+.title {
    font-style: normal;
    font-weight: 300;
    font-size: 140px;
@@ -73,15 +75,14 @@ body {
 .photo-product,
 .corneotherapy,
 .care,
-.facilities{
+.facilities,
+.blog {
    margin: 200px 0 200px;
 }
 
-a{
+a {
    cursor: pointer;
 }
-.photo-product__slider{
+.photo-product__slider {
    display: none;
 }
-
-
