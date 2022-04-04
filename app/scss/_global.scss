@@ -72,13 +72,16 @@ body {
 }
 .photo-product,
 .corneotherapy,
-.care {
+.care,
+.facilities{
    margin: 200px 0 200px;
 }
 
 a{
    cursor: pointer;
 }
-
+.photo-product__slider{
+   display: none;
+}
 
 

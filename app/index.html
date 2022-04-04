@@ -36,8 +36,8 @@
                            <li><a href="#">Наше производство</a></li>
                            <li><a href="#">Публикации</a></li>
                         </ul> -->
-                           <a href="#">Меню</a>
-                           <a href="#">Магазин</a>
+                           <a class="header__menu-text" href="#">Меню</a>
+                           <a class="header__shops" href="#">Магазин</a>
                         </div>
                         <div class="logo">
                            <a href="#">
@@ -57,11 +57,13 @@
                </div>
                <div class="header__content">
                   <div class="container">
-                     <p class="title-made">Beauty from</p>
-                     <div class="header__content-box">
-                        <p class="text">Симбиоз корнеотерапевтических разработок
-                           и натуральных природных ингредиентов</p>
-                        <p class="title-raleway">NATURE</p>
+                     <div class="header__content__inner">
+                        <p class="title-made">Beauty from</p>
+                        <div class="header__content-box">
+                           <p class="title-raleway">NATURE</p>
+                           <p class="text">Симбиоз корнеотерапевтических разработок
+                              и натуральных природных ингредиентов</p>
+                        </div>
                      </div>
                   </div>
 
@@ -78,7 +80,7 @@
          <!-- End-header -->
          <main>
             <!-- start-slider -->
-            <section class="slider-top">
+            <!-- <section class="slider-top">
                <div class="slider__inner">
                   <div class="slider__item" style="background-image: url(images/slider/slide-1.jpg);">
                      <div class="slider__item-wrapper">
@@ -119,7 +121,7 @@
                         </div>
                      </div>
                   </div>
-            </section>
+            </section> -->
             <!-- end-slider -->
             <!-- start-photo-product -->
             <section class="photo-product">
@@ -130,23 +132,24 @@
 
                   </div>
                   <div class="photo-product__inner">
+
                      <div class="photo-product__item">
                         <div class="photo-product__item-img">
                            <img src="images/photo-product/photo-1.jpg" alt="">
                            <div class="photo-product__item-box">
                               <span class="photo-product__item-icon">
-                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="62.5" cy="62.5" r="62" stroke="white"/>
-                                    <path d="M51.5166 62.4492H73.175" stroke="white"/>
-                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white"/>
-                                    </svg>
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
                               </span>
                               <p class="photo-product__item-text">
                                  Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
                                  делают наши средства супер эффективными.
                               </p>
                            </div>
-
                         </div>
                      </div>
 
@@ -155,11 +158,12 @@
                            <img src="images/photo-product/photo-2.jpg" alt="">
                            <div class="photo-product__item-box">
                               <span class="photo-product__item-icon">
-                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="62.5" cy="62.5" r="62" stroke="white"/>
-                                    <path d="M51.5166 62.4492H73.175" stroke="white"/>
-                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white"/>
-                                    </svg>
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
                               </span>
                               <p class="photo-product__item-text">
                                  Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
@@ -172,7 +176,12 @@
                            <img src="images/photo-product/photo-3.jpg" alt="">
                            <div class="photo-product__item-box">
                               <span class="photo-product__item-icon">
-                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="62.5" cy="62.5" r="62" stroke="white"/> <path d="M51.5166 62.4492H73.175" stroke="white"/> <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white"/> </svg>
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
                               </span>
                               <p class="photo-product__item-text">
                                  Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
@@ -188,11 +197,76 @@
                            <img src="images/photo-product/photo-4.jpg" alt="">
                            <div class="photo-product__item-box">
                               <span class="photo-product__item-icon">
-                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="62.5" cy="62.5" r="62" stroke="white"/>
-                                    <path d="M51.5166 62.4492H73.175" stroke="white"/>
-                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white"/>
-                                    </svg>
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
+                              </span>
+                              <p class="photo-product__item-text">
+                                 Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
+                                 делают наши средства супер эффективными.
+                              </p>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="photo-product__slider">
+
+                     <div class="photo-product__item">
+                        <div class="photo-product__item-img">
+                           <img src="images/photo-product/photo-1.jpg" alt="">
+                           <div class="photo-product__item-box">
+                              <span class="photo-product__item-icon">
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
+                              </span>
+                              <p class="photo-product__item-text">
+                                 Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
+                                 делают наши средства супер эффективными.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="photo-product__item">
+                        <div class="photo-product__item-img">
+                           <img src="images/photo-product/photo-2.jpg" alt="">
+                           <div class="photo-product__item-box">
+                              <span class="photo-product__item-icon">
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
+                              </span>
+                              <p class="photo-product__item-text">
+                                 Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
+                                 делают наши средства супер эффективными.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="photo-product__item ">
+                        <div class="photo-product__item-img">
+                           <img src="images/photo-product/photo-3.jpg" alt="">
+                           <div class="photo-product__item-box">
+                              <span class="photo-product__item-icon">
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
                               </span>
                               <p class="photo-product__item-text">
                                  Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
@@ -203,6 +277,25 @@
                         </div>
                      </div>
 
+                     <div class="photo-product__item">
+                        <div class="photo-product__item-img">
+                           <img src="images/photo-product/photo-4.jpg" alt="">
+                           <div class="photo-product__item-box">
+                              <span class="photo-product__item-icon">
+                                 <svg width="125" height="125" viewBox="0 0 125 125" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="62.5" cy="62.5" r="62" stroke="white" />
+                                    <path d="M51.5166 62.4492H73.175" stroke="white" />
+                                    <path d="M62.3438 73.2773L62.3437 51.6189" stroke="white" />
+                                 </svg>
+                              </span>
+                              <p class="photo-product__item-text">
+                                 Богатый состав и максимальные дозировки самых дорогих и высококачественных компонентов
+                                 делают наши средства супер эффективными.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </section>
@@ -235,9 +328,11 @@
                      </div>
                      <div class="corneotherapy__item-2">
                         <span>
-                           <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M1.04557 1.49427L25.9541 15.8752L1.04557 30.2562L1.04557 1.49427Z" fill="white" stroke="white"/>
-                              </svg>
+                           <svg width="27" height="32" viewBox="0 0 27 32" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.04557 1.49427L25.9541 15.8752L1.04557 30.2562L1.04557 1.49427Z" fill="white"
+                                 stroke="white" />
+                           </svg>
                         </span>
                      </div>
                      <div class="corneotherapy__item-3">
@@ -260,54 +355,73 @@
                   </div>
                   <div class="facilities__slider">
                      <div class="facilities__slider-inner">
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-1.jpg" alt="">
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-1.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Очищение
+                              </div>
                            </div>
-                           <div class="slider__item-text">
-                              Очищение
+                        </a>
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-2.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Тонизирование
+                              </div>
                            </div>
-                        </div>
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-2.jpg" alt="">
+                        </a>
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-3.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Сыворотки
+                              </div>
                            </div>
-                           <div class="slider__item-text">
-                              Тонизирование
+                        </a>
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-4.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Бустеры/<br>Концентраты
+                              </div>
                            </div>
-                        </div>
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-3.jpg" alt="">
+                        </a>
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-5.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Кремы
+                              </div>
                            </div>
-                           <div class="slider__item-text">
-                              Сыворотки
+                        </a>
+
+                        <a class="facilities__slider-item">
+                           <div class="facilities__slider-item-wrapper">
+                              <div class="slider__item-img">
+                                 <img src="images/facilities-slider/item-6.jpg" alt="">
+                              </div>
+                              <div class="slider__item-text">
+                                 Маски
+                              </div>
                            </div>
-                        </div>
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-4.jpg" alt="">
-                           </div>
-                           <div class="slider__item-text">
-                              Бустеры/<br>Концентраты
-                           </div>
-                        </div>
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-5.jpg" alt="">
-                           </div>
-                           <div class="slider__item-text">
-                              Кремы
-                           </div>
-                        </div>
-                        <div class="facilities__slider-item">
-                           <div class="slider__item-img">
-                              <img src="images/facilities-slider/item-6.jpg" alt="">
-                           </div>
-                           <div class="slider__item-text">
-                              Маски
-                           </div>
-                        </div>
+                        </a>
+
                      </div>
                   </div>
                </div>
@@ -354,8 +468,6 @@
                         <div class="care__item-number">05</div>
                         <div class="care__item-text">Сверхчувствительная/<span>аллергичная кожа</span></div>
                      </div>
-
-
                      <div class="care__item">
                         <div class="care__item-number">06</div>
                         <div class="care__item-text">Обезвоженная кожа</div>
@@ -366,7 +478,7 @@
             </section>
             <!-- end-care -->
             <!-- start-consultation -->
-            <section class="consultation">
+            <!-- <section class="consultation">
                <div class="container">
                   <div class="consultation__title title">
                      <div class="consultation__title-1">
@@ -406,10 +518,10 @@
                      </div>
                   </div>
                </div>
-            </section>
+            </section> -->
             <!-- end-consultation -->
             <!-- start-subscription -->
-            <section class="subscription">
+            <!-- <section class="subscription">
 
                <div class="subscription__top">
                   <div class="container">
@@ -448,13 +560,13 @@
                      </div>
                   </div>
 
-            </section>
+            </section> -->
             <!-- end subscription -->
          </main>
 
       </div>
       <!-- start-footer -->
-      <footer class="footer">
+      <!-- <footer class="footer">
          <div class="container">
             <div class="footer__contacts">
                <a class="phone" href="tel:+7 (925) 230 85 25">+7 (925) 230 85 25</a>
@@ -486,7 +598,7 @@
                </div>
             </div>
          </div>
-      </footer>
+      </footer> -->
       <!-- end-footer -->
    </div>
 

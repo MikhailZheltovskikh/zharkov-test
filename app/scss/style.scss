@@ -32,11 +32,10 @@
       & + a {
          margin-left: 60px;
       }
-      &:hover{
+      &:hover {
          color: #cb9e76;
       }
    }
-   
 }
 .menu__btn {
    margin-right: 12px;
@@ -64,13 +63,13 @@
       text-transform: uppercase;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #fff;
-      &:hover{
+      &:hover {
          color: #cb9e76;
       }
    }
    .like {
       background-image: url(../images/icon/like.svg);
-      width: 32px;
+      width: 33px;
       height: 30px;
    }
    .login {
@@ -102,6 +101,7 @@
    color: #cb9e76;
    .title-made {
       font-size: 260px;
+      margin-left: 40px;
    }
    .title-raleway {
       font-size: 215.273px;
@@ -115,6 +115,7 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
+      flex-direction: row-reverse;
    }
 }
 .header__bottom {
@@ -244,15 +245,18 @@
    }
 }
 .photo-product__item-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   span:hover{
-      path{
+   span:hover {
+      path {
          stroke: #cb9e76;
       }
-      circle{
+      circle {
          stroke: #cb9e76;
       }
    }
@@ -277,6 +281,29 @@
    margin: 0 32px;
    .photo-product__item-img + .photo-product__item-img {
       margin-top: 32px;
+   }
+}
+.photo-product__slider {
+   margin-top: -75px;
+   padding-bottom: 55px;
+   .slick-next.slick-next.slick-arrow,
+   .slick-prev.slick-arrow {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+   }
+   .slick-prev {
+      position: absolute;
+      bottom: -65px;
+      right: 50%;
+      transform: translate(-50%);
+   }
+   .slick-next {
+      position: absolute;
+      bottom: -65px;
+      left: 50%;
+      transform: translate(-50%);
+      margin-left: 66px;
    }
 }
 //end photo-product
@@ -336,7 +363,8 @@
 }
 
 .corneotherapy__item-2 {
-   min-width: 657px;
+   max-width: 657px;
+   width: 100%;
    height: 675px;
    background-color: #2f3338;
    margin: 0 35px 0 86px;
@@ -352,14 +380,13 @@
       height: 155px;
       border: 1px solid #ffffff;
       border-radius: 50%;
-      &:hover{
-         border: 1px solid #CB9E76;
-         path{
-            fill: #CB9E76;
-            stroke: #CB9E76;
+      &:hover {
+         border: 1px solid #cb9e76;
+         path {
+            fill: #cb9e76;
+            stroke: #cb9e76;
          }
       }
-      
    }
 }
 .corneotherapy__item-3 {
@@ -377,12 +404,12 @@
       margin-top: -135px;
    }
 }
-.facilities__slider-item {
-   max-width: 300px;
+.facilities__slider-item-wrapper {
+   width: 330px;
    height: 520px;
    border: 1px solid transparent;
-   padding: 30px;
-   &:hover{
+   padding: 20px;
+   &:hover {
       border: 1px solid #cb9e76;
    }
    .slider__item-img {
@@ -401,12 +428,16 @@
       padding-top: 10px;
    }
 }
+.facilities__slider {
+   margin-top: 50px;
+}
 .facilities__slider-inner {
    padding-bottom: 55px;
    .slick-next.slick-next.slick-arrow,
    .slick-prev.slick-arrow {
       border: none;
       background-color: transparent;
+      cursor: pointer;
    }
    .slick-prev {
       position: absolute;
@@ -458,7 +489,6 @@
       font-size: 60px;
       line-height: 100%;
       color: #2f3338;
-      margin-right: 233px;
    }
    .care__item-text {
       font-family: "Raleway";
@@ -655,7 +685,7 @@
       margin-bottom: 10px;
       letter-spacing: 0.02em;
       font-style: normal;
-      &:hover{
+      &:hover {
          color: #cb9e76;
       }
    }
@@ -664,12 +694,12 @@
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-   a:hover{
+   a:hover {
       color: #cb9e76;
    }
    &-left {
       color: #fff;
-      a{
+      a {
          color: #fff;
       }
       p {
@@ -709,7 +739,7 @@
       a {
          color: #fff;
          text-transform: uppercase;
-         &:hover{
+         &:hover {
             color: #cb9e76;
          }
       }
@@ -718,4 +748,4 @@
 
 //end footer
 
-@import "midia";
+@import "media";
