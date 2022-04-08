@@ -76,8 +76,7 @@ body {
 .corneotherapy,
 .care,
 .product-categories,
-.blog,
-{
+.blog{
    margin: 200px 0 200px;
 }
 
@@ -86,4 +85,7 @@ a {
 }
 .photo-product__slider {
    display: none;
+}
+button{
+   cursor: pointer;
 }

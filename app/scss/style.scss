@@ -150,7 +150,7 @@
 }
 .navigation__bar {
   margin-top: 81px;
-  margin-bottom: 100px
+  margin-bottom: 100px;
 }
 .catalog__btn {
   display: flex;
@@ -601,7 +601,6 @@
 }
 .consultation__form-button {
   button {
-    cursor: pointer;
     display: inline-block;
     width: 162px;
     height: 162px;
@@ -799,7 +798,6 @@
       border: none;
       background-color: transparent;
       margin-right: 10px;
-      cursor: pointer;
     }
   }
   .checkbox {
@@ -925,46 +923,64 @@
 //***************** end footer *****************
 
 //***************** start product ****************
-.product{
-   margin-bottom: 100px;
+.product {
+  margin-bottom: 100px;
 }
-.product__inner{
-   margin: -20px;
-   display: flex;
-   flex-wrap: wrap;
+.product__inner {
+  margin: -20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .product__item {
   width: 25%;
-
   padding: 40px;
 }
-.product__item-wrapper{
-   line-height: 100%;
-   font-feature-settings: "pnum" on, "lnum" on;
-   color: #2f3338;
+.product__item-wrapper {
+  line-height: 100%;
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #2f3338;
+  padding: 10px;
+  border: 1px solid transparent;
+  &:hover {
+    border: 1px solid #cb9e76;
+  }
 }
 .product__item-img {
-   min-height: 480px;
-   background-repeat: no-repeat;
-   background-position: center;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  min-height: 480px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  span {
+    position: absolute;
+    width: 126px;
+    height: 125px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #cb9e76;
+    font-size: 18px;
+    line-height: 100%;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #cb9e76;
+    top: 0;
+    left: 0;
+  }
 }
 .product__tem-title {
-   padding-bottom: 10px;
-   border-bottom: 1px solid #CB9E76;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cb9e76;
 }
 .product__item-box {
-   display: flex;
-   justify-content: space-between;
-   margin-top: 10px;
-
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 .product__item-volume {
-   opacity: 0.3;
-}
-.product__item-prise {
+  opacity: 0.3;
 }
 //***************** end product *****************
 
