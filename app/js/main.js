@@ -5,7 +5,7 @@ $('.slider__inner').slick({
 
 });
 
-$('.facilities__slider-inner').slick({
+$('.product-categories__slider-inner').slick({
    arrows: false,
    slidesToShow: 4,
    slidesToScroll: 1,
@@ -64,3 +64,6 @@ $('.photo-product__item-img').on('click', function () {
          $('.photo-product__item-text').addClass('active');
    }
 });
+
+  var mixer = mixitup('.product__inner'); 
+
